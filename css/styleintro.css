@@ -19,7 +19,7 @@ ul span.header{
 
 #me{
       
-      list-style-type:square;
+      list-style:none;
       color:  white;
       margin-bottom: 30px;
 }   
