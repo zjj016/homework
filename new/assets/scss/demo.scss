@@ -1,0 +1,139 @@
+@import "includes/bootstrap";
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,700|Open+Sans:400,600,700,800");
+
+body {
+  background-color: $brand-primary;
+}
+
+header {
+  float: left;
+  width: 100%;
+  text-align: center;
+  padding: 100px 0;
+  color: #fff;
+  h1 {
+    text-transform: uppercase;
+    font-size: 3em;
+    br {
+      display: none;
+    }
+  }
+}
+
+header,
+section {
+  border-bottom: 3px #fff solid;
+}
+
+.btn {
+  border: 2px #fff solid;
+  color: #fff;
+  background-color: transparent;
+  &:hover,
+  &:focus,
+  &:active {
+    background-color: #fff;
+    border-color: #fff;
+    color: $brand-primary;
+  }
+}
+
+section {
+  position: relative;
+  overflow: hidden;
+  min-height: 700px;
+  padding: 100px 0;
+  color: #fff;
+  background-color: #000;
+
+  > .image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    box-shadow: inset 0 0 0 99999px rgba($brand-primary, .3);
+  }
+
+  .container {
+    z-index: 1;
+  }
+
+  h2 {
+    text-transform: uppercase;
+    font-size: 3em;
+  }
+
+  hr {
+    border-top: none;
+    border-bottom: 5px $brand-success solid;
+    width: 200px;
+    max-width: 100%;
+    display: inline-block;
+  }
+
+  &#first {
+    > .image {
+      background-image: url('../img/image-1.jpg');
+    }
+  }
+
+  &#second {
+    > .image {
+      background-image: url('../img/image-2.jpg');
+    }
+  }
+
+  &#third {
+    > .image {
+      background-image: url('../img/image-3.jpg');
+    }
+  }
+
+  &#fourth {
+    > .image {
+      background-image: url('../img/image-4.jpg');
+    }
+  }
+}
+
+footer {
+  float: left;
+  width: 100%;
+  padding: 100px 0;
+  text-align: center;
+}
+
+@media (max-width: $screen-sm-max) {
+  section {
+    text-align: center;
+  }
+  header {
+    h1 {
+      br {
+        display: block;
+      }
+    }
+  }
+}
+
+@media (min-width: $screen-md-min) {
+  section,
+  header {
+    padding: 200px 0;
+  }
+  header {
+    h1 {
+      font-size: 5em;
+    }
+  }
+}
+
+@media (min-width: $screen-lg-min) {
+  header {
+    h1 {
+      font-size: 6em;
+    }
+  }
+}
