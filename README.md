@@ -14,10 +14,8 @@
 		影视介绍页面负责通过视频文字介绍夏洛克系列的影视作品；
 		以及一个站长的自我介绍。
 		页面的URL地址：
-主页面：https://victreecr.github.io/final_homework/web_final_homework2/index.html</br>
-英雄页面：https://victreecr.github.io/final_homework/web_final_homework2/hero.html</br>
-影视页面：https://victreecr.github.io/final_homework/web_final_homework2/movie.html</br>
-反馈页面：https://victreecr.github.io/final_homework/web_final_homework2/myform.html</br>
+主页面：https://zjj016.github.io/homework/</br>
+
 		
 
 ## 三、技术指标</br>
@@ -27,10 +25,10 @@
 ## 四、技术点说明</br>
 ### 1）技术难点</br>
 #### 1.主页面设置时壁纸留白问题：</br>
-		难点：调节图片大小和div大小均不能解决；
-		知识背景：把div的display属性进行改变，
-		最终解决方法：</br>
-		对壁纸设定两个div，然后改变div的display属性）
+		难点：调节图片大小和div大小均不能解决
+		知识背景：把div的display属性进行改变内边距外边距
+		最终解决方法：
+		对壁纸设定两个div，然后改变div的display属性
 ```css
 		.a{ 
 			display:table;
@@ -45,6 +43,7 @@
 			display:inline-block !important;
 			display:inline; 
 		}
+
 ```
 #### 2.内容无法再壁纸上移动</br>
 		难点：课堂已知知识无法解决
@@ -58,15 +57,17 @@ body{
         background-attachment: fixed; /*定义背景图片随滚动轴的移动方式,fixed是固定于浏览器窗口*/     
     }
 ```
-#### 3.视频资料的地址获取 </br>
-		难点：无法直接在网站上获取视频地址
-		知识背景：巧用网页源代码
+#### 3.网页出现异常白条 </br>
+		难点：body与html界面大小不一致
+		知识背景：内边距外边距
 		最终解决方案：
-		见链接
->：http://blog.csdn.net/u012061196/article/details/49687013 </br>
+        body，html{
+		width:100%; 
+		height:100%; 
+		}
 
 #### 4.git上部分样式不能显示问题
-		难点：因为是应用插件的原因，开始时候没有具体熟悉插件的各个代码。GitHub对一些CSS和JS文件不能显示。
+		难点：因为是应用插件的原因，开始时候没有具体熟悉插件的各个代码。	。
 		知识背景：修改hosts和bootstrap文件的引用
 		最终解决方案：
 >		1.修改hosts文件
